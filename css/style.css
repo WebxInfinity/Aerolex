@@ -85,7 +85,11 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0; 
+width:100%; 
+}
+
+
 
 article,
 aside,
@@ -1418,44 +1422,38 @@ Back To Top Section
   position: relative;
   background-color: #041e42;
   color: #ffffff;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
   .feature-box-8 .media {
     width: 100%;
     margin-bottom: 30px; }
-  .feature-box-8 .body {
+ 
+.feature-box-8 .body {
     position: relative;
     text-align: center;
-    padding: 30px 40px 30px; }
-    .feature-box-8 .body .icon-holder {
-      position: absolute;
-      left: 50%;
-      top: -30px;
-      width: 84px;
-      height: 84px;
-      line-height: 100px;
-      background-color: #041e42;
-      color: #ffffff;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+    padding: 0px 0px; 
+}
+   
+.feature-box-8 .body .heading{
+    width: 100%;
+    font-size: 12px;
+}
+
     .feature-box-8 .body .fa {
       font-size: 40px; }
     .feature-box-8 .body .title {
       color: #46c2ca;
-      margin-bottom: 10px;
+      margin:0px;
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: .2px;
       display: inline-block; }
     .feature-box-8 .body .readmore {
       display: block;
-      margin-top: 20px;
+      margin-top: 0px;
+        margin:0px;
       font-weight: 700;
       -webkit-transform: translate3d(0px, 25px, 0px);
       transform: translate3d(0px, 25px, 0px);
@@ -1463,6 +1461,7 @@ Back To Top Section
       transition: all 0.4s ease 0s !important;
       opacity: 0;
       color: #041e42; }
+
   .feature-box-8:hover {
     background-color: #46c2ca;
     color: #000; }
@@ -1470,6 +1469,7 @@ Back To Top Section
       background-color: #46c2ca; }
     .feature-box-8:hover .title {
       color: #041e42; }
+
     .feature-box-8:hover .readmore {
       opacity: 1;
       -webkit-transform: translate3d(0px, 0px, 0px);
@@ -2376,7 +2376,10 @@ Back To Top Section
 
 .topbar-logo {
   background-color: #ffffff;
-  padding: 5px 0; }
+  padding: 0px;
+    
+}
+
 
 .contact-info {
   float: right;
@@ -2436,7 +2439,7 @@ Back To Top Section
     top: -85px; }
   .navbar-main .navbar-collapse {
     padding-right: 0;
-    padding-left: 0; }
+    padding-left: 0;}
   .navbar-main ol, .navbar-main li {
     margin: 0 0;
     font-size: 12px;
@@ -2489,14 +2492,14 @@ Back To Top Section
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color:rgba(0, 0, 0, 0) ;
     z-index: -1; }
   .banner ol li, .banner ul li {
     margin: 0; }
   .banner .btn-primary:hover, .banner .btn-secondary:hover {
     background-color: #46c2ca; }
 
-#slides .slides-container li img {
+#slides .slides-container li:nth-child(5) img {
     
     padding-top:32px;
 }
@@ -3225,6 +3228,8 @@ dl.hiw {
 
   .testimony .owl-nav .owl-next {
     right: -20px; } }
+
+
 @media (max-width: 768px) {
   .navbar-toggle {
     clear: left;
@@ -3271,6 +3276,8 @@ dl.hiw {
 
   .btn-sidebar.btn, .btn-sidebar.btn-primary, .btn-sidebar.btn-secondary, .btn-sidebar.btn-primary, .btn-sidebar.btn-secondary {
     padding: 15px 25px; } }
+
+
 @media (max-width: 767px) {
   .navbar-main {
     bottom: 0; }
@@ -3283,6 +3290,8 @@ dl.hiw {
 
   .nav > li > a {
     padding: 10px 25px; } }
+
+
 @media (max-width: 479px) {
   .contact-info {
     clear: right;
@@ -3565,7 +3574,7 @@ body > div.section.why.overlap > div > div > div:nth-child(3) > div > strong, bo
     
     margin-left:20px; 
     margin-right 20px;
-    height: 400px; 
+    height: 310px; 
     border-bottom: 10px solid #337ab7;
 }
 
@@ -3610,7 +3619,8 @@ body > div.section.why.overlap > div > div > div:nth-child(3) > div > strong, bo
 
 #abt-box-home {
     
-    padding-bottom: 0px;   
+    padding-bottom: 0px; 
+    margin-top: 140px;
 }
 
 #top-bar-contact .body-content{
@@ -3629,10 +3639,13 @@ body > div.section.why.overlap > div > div > div:nth-child(3) > div > strong, bo
     height: 235px;
 }
 
-body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-right > p > a{
+body > div.footer > div.fcopy > div > div > div.col-sm-12.col-md-6.col-xs-12.text-right> p{
+    font-size: 14px;
+} 
+
+body > div.footer > div.fcopy > div > div > div.col-sm-12.col-md-6.col-xs-12.text-right> p > a{
     color: yellow;
     font-size: 14px;
-    
 }
 
 body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-right > p > a:hover,body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-right > p > a:focus{
@@ -3648,6 +3661,17 @@ body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-
     margin-bottom: 20px;
 }
 
+#abt-box-com {
+  
+    padding-bottom:  0px;
+}
+
+.abt-header-cont h2{
+    color: #041e42;
+}
+.abt-header-cont p{
+    font-size: 16px;
+}
  
     #abt-box-home > div > div:nth-child(1) > div{
         padding-bottom:65px;
@@ -3709,17 +3733,183 @@ body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-
 
 
 #slides > div > ul > li:nth-child(1) > img {
-    
-    padding-bottom: 35px;
+    max-width: 100%;
+    padding-top: 50px;
 }
 
+#slides > div > ul > li:nth-child(2) > img {
+    max-width: 100%;
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+
+
+#slides > div > ul > li:nth-child(3) > img {
+    max-width: 100%;
+    padding-top: 30px;
+
+}
+
+#slides > div > ul > li:nth-child(4) > img {
+    max-width: 100%;
+    padding-top: 30px;
+    
+}
+
+#slides > div > ul > li:nth-child(5) > img {
+    max-width: 100%;
+    padding-top: 30px;
+    
+}
 #slides > div > ul > li:nth-child(6) > img {
     
-    padding-top: 0px;
+    max-width: 100%;
+    padding-top: 30px;
+    padding-bottom: 0px;
 }
+
 
 
 /* #041e42; */
+
+@media only screen and (max-width: 1500px){
+
+    #slides > div > ul > li:nth-child(1) > img {
+    
+    padding-top: 100px;
+}
+        
+    #slides > div > ul > li:nth-child(2) > img
+    {
+    
+    padding-top: 30px;
+}
+    
+    #slides > div > ul > li:nth-child(3) > img,
+    #slides > div > ul > li:nth-child(4) > img{
+    
+    padding-top: 60px;
+}
+    
+    #slides > div > ul > li:nth-child(5) > img{
+        
+        padding-bottom: 130px;
+    }
+    
+        #slides > div > ul > li:nth-child(6) > img{
+        
+        padding-bottom: 100px;
+    }
+    
+}
+
+
+@media (max-width: 1352px){
+
+    #slides > div > ul > li:nth-child(1) > img {
+    
+    padding-top: 30px;
+}
+        
+    #slides > div > ul > li:nth-child(2) > img
+    {
+    
+    padding-top: 0px;
+}
+    
+    #slides > div > ul > li:nth-child(3) > img,
+    #slides > div > ul > li:nth-child(4) > img{
+    
+    padding-top: 60px;
+}
+    
+    #slides > div > ul > li:nth-child(5) > img{
+        
+        padding-bottom: 130px;
+    }
+    
+        #slides > div > ul > li:nth-child(6) > img{
+        
+        padding-bottom: 100px;
+    }   
+
+}
+
+
+@media(max-width: 1351px){
+
+    
+    #slides > div > ul > li:nth-child(1) > img{
+    
+    padding-top: 100px;
+    
+    }
+        
+    #slides > div > ul > li:nth-child(2) > img{
+       
+        padding-top: 30px;
+        padding-bottom: 100px;
+        
+    }
+    
+    #slides > div > ul > li:nth-child(3) > img,
+    #slides > div > ul > li:nth-child(4) > img{
+    
+    padding-top: 60px;
+    
+    }
+    
+    #slides > div > ul > li:nth-child(5) > img{
+        
+        padding-top: 0px;
+    }
+    
+        #slides > div > ul > li:nth-child(6) > img{
+        
+        padding-top: 0px;
+            padding-bottom: 0px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 1200px){
+
+    
+    #slides > div > ul > li:nth-child(1) > img {
+    
+    padding-top: 70px;
+}
+        
+    #slides > div > ul > li:nth-child(2) > img{
+       
+        padding-top: 10px;
+        padding-bottom: 80px;
+        
+    }
+    
+    
+    #slides > div > ul > li:nth-child(3) > img,
+    #slides > div > ul > li:nth-child(4) > img{
+    
+    padding-top: 60px;
+}
+    
+    #slides > div > ul > li:nth-child(5) > img{
+        
+        padding-bottom: 100px;
+    }
+    
+        #slides > div > ul > li:nth-child(6) > img{
+        
+        padding-bottom: 0px;
+    }
+    
+    
+
+}
+
+
 
 @media only screen and (max-width: 1199px){
     
@@ -3783,12 +3973,60 @@ body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-
         
     }
     
+    #top-bar-contact > div:nth-child(1) {
+        
+        margin-right: 10px;
+    }
+    
+    #top-bar-contact > div:nth-child(1) > div.body-content > a{
+        font-size: 12px;
+    }
+    
+    #top-bar-contact > div:nth-child(2) {
+        
+        margin-right: 10px;
+    }
+    
+    
+    #top-bar-contact > div:nth-child(2) > div.body-content > a {
+        
+        font-size: 12px;
+    }
+    
+    
+     #slides > div > ul > li:nth-child(1) > img {
+    
+    padding-top: 80px;
+}
+        
+    #slides > div > ul > li:nth-child(2) > img
+    {
+    
+    padding-top: 30px;
+}
+    
+    #slides > div > ul > li:nth-child(6) > img
+    {
+    
+    padding-top: 30px;
+}
+    body > div.section.why.overlap > div > div > div:nth-child(13) > div > div.body > div.heading{
+        
+        font-size: 10px;
+    }
+    
+    body > div.section.why.overlap > div > div > div:nth-child(12) > div > div.body > div.heading{
+        
+        font-size: 10px;
+    }
     
 }
 
 
+
 @media only screen and (max-width: 991px) {
     
+     
     #abt-box-home > div > div:nth-child(1) > div{
         
         padding-bottom: 0px;
@@ -3887,15 +4125,25 @@ body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-
         font-size: 13px;
     }
     
-    body > div.footer > div.fcopy > div > div > div.col-sm-8.col-md-8.col-xs-8 > p {
+    body > div.footer > div.fcopy > div > div > div:nth-child(1){
+        text-align: center;
+        margin: 0px;
+        padding: 0px; 
+    }
+    
+    body > div.footer > div.fcopy > div > div > div:nth-child(1) > p{
         
         margin-bottom: 0px;
     }
-    
-    body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4text-right {
+    body > div.footer > div.fcopy > div > div > div.col-sm-12.col-md-6.col-xs-12.text-right {
         
         margin: 0px;
         padding: 0px;
+        text-align: center;
+    }
+    
+    body > div.footer > div.fcopy > div > div > div.col-sm-12.col-md-6.col-xs-12.text-right > p{
+        margin-bottom: 0px;
     }
     
     body > div.footer > div.fcopy {
@@ -3905,24 +4153,28 @@ body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-
     
     #slides > div > ul > li:nth-child(1) > img {
     
-    padding-top: 60px;
+    padding-top: 40px;
 }
         
-    #slides > div > ul > li:nth-child(2) > img,
+    #slides > div > ul > li:nth-child(2) > img{
+        
+    padding-top: 0px;    
+    }
+    
     #slides > div > ul > li:nth-child(3) > img,
     #slides > div > ul > li:nth-child(4) > img{
     
-    padding-bottom: 60px;
+    padding-bottom: 0px;
 }
     
     #slides > div > ul > li:nth-child(5) > img{
         
-        padding-bottom: 90px;
+        padding-top: 0px;
     }
     
         #slides > div > ul > li:nth-child(6) > img{
         
-        padding-bottom: 100px;
+        padding-top: 0px;
     }
     
     #home-sub > div > div.col-sm-7.col-md-7 > div{
@@ -3982,20 +4234,34 @@ body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-
     
     #top-bar-contact > div:nth-child(1){
         
-        margin-right: 10px;
+        margin-right: 0px;
     }
     
     #top-bar-contact > div:nth-child(2){
-        
+    
         margin-right: 10px;
     }
+    
+    #top-bar-contact > a {
+        
+        font-size: 12px;
+    }
+    
+    #top-bar-contact > div:nth-child(1) > div.body-content{
+        margin-left: 40px;
+    }
+    
+    #top-bar-contact > div:nth-child(2) > div.body-content{
+        margin-left: 30px;
+    }
+    
     
     body > div.header > div.topbar > div > div > div.col-sm-5.col-md-6 > div > div {
         font-size: 12px;
     }
     
     
-        body > div.section.why.overlap > div > div > div.col-sm-8.col-md-8.col-md-pull-4 > div > div.row > div:nth-child(1) > table > thead > tr >td {
+     body > div.section.why.overlap > div > div > div.col-sm-8.col-md-8.col-md-pull-4 > div > div.row > div:nth-child(1) > table > thead > tr >td {
         
         font-size: 10px;
     }
@@ -4010,67 +4276,79 @@ body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-
         font-size: 24px;
         
     }
+    
+    body > div.footer > div.container > div > div:nth-child(2) > div > ul{
+        
+        font-size: 10px;
+    }
+    
+    body > div.footer > div.container > div > div:nth-child(3) > div > ul{
+        padding: 0px;
+        font-size: 10px;
+        
+    }
+    
+    body > div.footer > div.container > div > div.col-sm-6.col-md-6 > div > p{
+        
+        font-size: 12px;
+    }
+    
+    body > div.footer > div.container > div > div:nth-child(2) > div > div{
+        
+        font-size: 22px;
+    }
+    
+    #contact-01 > h2{
+        font-size: 28px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+   
+    #slides > div > ul > li:nth-child(2) > img{
+    
+    max-width: 800px !important;    
+    padding: 0px;
+    transform: translateX(40px)
+        
+}
+
+    #slides > div > ul > li:nth-child(3) > img,
+     #slides > div > ul > li:nth-child(4) > img, #slides > div > ul > li:nth-child(5) > img{
+    
+    padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        
+}
+    
 }
 
 @media only screen and (max-width: 767px){
     
+     
     
-    #top-bar-contact > div:nth-child(1){
-        
-        margin-right: 100px;
-    }
     
-    #top-bar-contact > div:nth-child(2){
-        
-        margin-right: 100px;
-    }
-    
-    #top-bar-contact > div:nth-child(1) > div.body-content > a{
-        
-        font-size: 15px;
+    #top-bar-contact > div:nth-child(1) > div.body-content > a
+    {
+        text-align: center;
+        font-size: 16px;
     }
     
     #top-bar-contact > div:nth-child(2) > div.body-content > a {
         
-        font-size: 15px;
+        text-align: center;
+        font-size: 16px;
+
     }
     
+       #slides > div > ul > li:nth-child(2) > img, #slides > div > ul > li:nth-child(5) > img{
     
-    #slides > div > ul > li:nth-child(1) > img {
-    
-    padding-top: 0px;
+    padding: 0px;
 }
-        
-    #slides > div > ul > li:nth-child(2) > img,
-    #slides > div > ul > li:nth-child(3) > img,
-    #slides > div > ul > li:nth-child(4) > img{
-    
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 0px; 
-    border-top: 0px;
-        border-bottom: 0px;
-}
-    
-   
-    #slides > div > ul > li:nth-child(5) > img{
-        
-        padding-top: 0px;
-        margin-top: 0px;
-    }
-    
-    
-        #slides > div > ul > li:nth-child(6) > img{
-        
-        padding-bottom: 10px;
-    }
-    
-    #slides > div > ul > li:nth-child(2) {
-        
-        padding-top: 0px;
-        margin-top: 0px;
-    }
+  
+
     
     #abt-box-home > div > div:nth-child(1) > div > div.body-content > div{
         
@@ -4112,28 +4390,27 @@ body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-
     
     #home-grid > div:nth-child(3) > div > a > div.media {
         
-        width: 737px;
-        height: 480px;
+        width: 345px;
+        height: 223px;
         
     }
     
     #home-grid > div:nth-child(3) > div > a > div.media> img {
         
-        width: 737px;
-        height: 480px;
+        width: 345px;
+        height: 223px;
         
     }
     
     #home-grid > div:nth-child(4) > div > a > div.media > img {
         
-          width: 737px;
-        height: 480px;
+        width: 345px;
+        height: 223px;
     }
     
     #home-grid > div:nth-child(4) > div > a > div.media {
-        
-          width: 737px;
-        height: 480px;
+width: 345px;
+        height: 223px;
     }
     
     #footer-box > div:nth-child(1) > div{
@@ -4287,6 +4564,18 @@ body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-
         
         width: 100%;
     }
+    
+        body > div.section.why.overlap > div > div > div:nth-child(13) > div > div.body > div.heading{
+        
+        font-size: 12px;
+    }
+    
+    body > div.section.why.overlap > div > div > div:nth-child(12) > div > div.body > div.heading{
+        
+        font-size: 12px;
+    }
+    
+    
 }
 
 @media only screen and (max-width: 740px){
@@ -4336,6 +4625,7 @@ height: auto;
 }
     
 
+
 @media only screen and (max-width: 414px){
     
     body > div.section.banner-page.pages > div > div > div > div > span {
@@ -4376,58 +4666,57 @@ height: auto;
     
     #home-grid > div:nth-child(3) > div > a > div.media {
         
-        width: auto;
-        height: 114.6px;
-        
+        width: 168.5;
+        height: 108.9px;
     }
     
     #home-grid > div:nth-child(3) > div > a > div.media> img {
         
-        width: auto;
-        height: 114.6px;
+      width: 168.5;
+        height: 108.9px;
+    }
+    
+    #home-grid > div:nth-child(4) > div > a > div.media {
+        
+        width: 168.5;
+        height: 108.9px;
         
     }
     
-    #slides > div > ul > li:nth-child(1) > img{
-        
-        transform: translateY(-110px)
-        
-    }
-    
-    
-    #slides > div > ul > li:nth-child(2) > img{
-        
-        transform: translateY(-125px)
-        
-    }
-    
-    #slides > div > ul > li:nth-child(3) > img{
-        
-        transform: translateY(-100px)
+    #home-grid > div:nth-child(4) > div > a > div.media> img {
+        width: 168.5;
+        height: 108.9px;
         
     }
     
     
-    #slides > div > ul > li:nth-child(4) > img{
+    #home-grid > div > div > a > div.body > div > h4
+       {
         
-        transform: translateY(-102px)
+           font-size: 8px;
+    }
+    
+    #home-grid > div> div > a > div.body > div > span{
         
+        font-size: 8px;
     }
     
     
-    #slides > div > ul > li:nth-child(5) > img{
+    body > div.section.cta > div > div > div > div > h3{
         
-        transform: translateY(-80px)
+        font-size: 11px;
+    }   
+    
+    #home-abt-top > h2{
         
+        font-size: 24px;
     }
     
-    #slides > div > ul > li:nth-child(6) > img{
+    #home-abt-top > h3{
         
-        transform: translateY(-117px)
-        
+        font-size: 20px;
     }
     
-        
 }
 
 
