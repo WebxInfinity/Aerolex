@@ -3063,11 +3063,11 @@ dl.hiw {
 
 /* 6.12 - Pages */
 .banner-page.pages {
-  background: url("../images/img2/banner-2.jpg") bottom center no-repeat; }
+  background: url("../images/img2/banner-1.jpg") bottom center no-repeat; }
 
 /* 6.12 - Contact */
 .banner-page.contact {
-  background: url("../images/img2/banner-2.jpg") bottom center no-repeat; }
+  background: url("../images/img2/banner-1.jpg") bottom center no-repeat; }
 
 /**
  * 7. - FOOTER
@@ -4381,14 +4381,27 @@ body > div.footer > div.fcopy > div > div > div.col-sm-4.col-md-4.col-xs-4.text-
     {
         text-align: center;
         font-size: 16px;
+        margin-right: 60px;
     }
     
     #top-bar-contact > div:nth-child(2) > div.body-content > a {
         
         text-align: center;
         font-size: 16px;
-
+        margin-right: 60px;
+        
     }
+    
+    #top-bar-contact > div:nth-child(1) > div.icon > div{
+        
+        margin-right: 20px;
+    }
+    
+        #top-bar-contact > div:nth-child(2) > div.icon > div{
+        
+        margin-right: 20px;
+    }
+    
     
        #slides > div > ul > li:nth-child(2) > img, #slides > div > ul > li:nth-child(5) > img{
     
@@ -4624,8 +4637,20 @@ width: 345px;
     
     body > div.section.banner.hidden-xl.hidden-lg.hidden-md.hidden-sm.col-xs > a{
         
-         -webkit-transform: translateY(-150px) translateX(80px); transform: translateY(-150px) translateX(80px);
+         
+        
         background-color: #ed1c24;
+        width: 200px;
+        height: 40px;
+        display: inline-flex;
+        -webkit-transform: translateY(-240px)translateX(-90px)rotate(-90deg);transform: translateY(-240px)translateX(-90px)rotate(-90deg);
+        font-size: 20px;
+        vertical-align: middle;
+        text-align: center;
+        padding-bottom: 0px;
+        padding-top: 10px;
+        padding-left: 40px;
+        border-radius: 10px;    
     }
      
     body > div.section.section-border > div > div:nth-child(2) > div > div > div.image > img{
@@ -4641,9 +4666,27 @@ width: 345px;
         
         font-size: 20px;
     }
+    
+    body > div.section.banner-page.pages > div > div > div > div > span{
+        font-size: 24px
+    }
+    
+    body > div.section.banner-page.pages > div > div > div > ol > li:nth-child(1) > a{
+        
+        font-size: 16px;
+    }
+    
+    body > div.section.banner-page.pages > div > div > div > ol > li.active{
+        
+        font-size: 16px;
+    }
+    
 }
 
 @media only screen and (max-width: 740px){
+    
+    
+    
     
         #home-grid > div:nth-child(3) > div > a > div.media {
         
@@ -4694,6 +4737,20 @@ height: auto;
         width: 550px;
         height: 225px;
         
+    }
+    
+    body > div.section.banner-page.pages > div > div > div > div > span{
+        font-size: 24px
+    }
+    
+    body > div.section.banner-page.pages > div > div > div > ol > li:nth-child(1) > a{
+        
+        font-size: 16px;
+    }
+    
+    body > div.section.banner-page.pages > div > div > div > ol > li.active{
+        
+        font-size: 16px;
     }
     
 }
@@ -4802,19 +4859,31 @@ height: auto;
     
     body > div.section.banner.hidden-xl.hidden-lg.hidden-md.hidden-sm.col-xs > a{
         
-         -webkit-transform: translateY(-100px) translateX(50px);transform: translateY(-100px) translateX(50px);
-        width: 120px;
-        text-align: center;
-        vertical-align: middle;
-        height: 50px;
-        padding-left: 23px;
-        background-color: #ed1c24;
+        width: 130px;
+        height: 40px;
+        transform: translateX(-63px)translateY(-120px)rotate(-90deg);
+        padding: 15px 10px 0px 15px;  
+        font-size: 18px;
+        
+        
     }
     
     #faq-01 > h1 > strong{
         font-size: 26px;
     }
+    
+    body > div.section.banner-page.pages > div > div > div > div > span{
+        font-size: 24px
+    }
+    
+    body > div.section.banner-page.pages > div > div > div > ol > li:nth-child(1) > a{
+        
+        font-size: 16px;
+    }
+    
+    body > div.section.banner-page.pages > div > div > div > ol > li.active{
+        
+        font-size: 16px;
+    }
+    
 }
-
-
-
