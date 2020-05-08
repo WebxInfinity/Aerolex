@@ -36,6 +36,13 @@ $(document).ready(function(){
 		
 	});
 
+    
+    var count = 1;
+setInterval(function() {
+    count = ($(".slideshow :nth-child("+count+")").fadeOut().next().length == 0) ? 1 : count+1;
+    $(".slideshow :nth-child("+count+")").fadeIn();
+}, 5000);
+    
 	/* =================================
 	BACK TO TOP 
 	=================================== */
