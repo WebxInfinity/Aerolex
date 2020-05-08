@@ -835,6 +835,19 @@ ul.circle {
       .banner-page .breadcrumb a:hover {
         color: #46c2ca; }
 
+
+.slideshow {
+    overflow: hidden;
+    width: auto;
+    height: 330px;
+    background-color: #fff;
+    margin: 10px;
+}
+.slideshow img {
+    width: auto;
+    height: 400;
+}
+
 /* 2.5. CATEGORY MENU */
 .widget {
   margin-bottom: 50px;
@@ -4885,5 +4898,17 @@ height: auto;
         
         font-size: 16px;
     }
+    
+    .slideshow {
+    overflow: hidden;
+    width: auto;
+    height: 250px;
+    background-color: #fff;
+    margin: 10px;
+}
+.slideshow img {
+    width: auto;
+    height: 250px;
+}
     
 }
